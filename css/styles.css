@@ -1,0 +1,18 @@
+body{
+   
+}
+
+.question-itself{
+    border-radius: 86px / 51px; 
+    border: 3px solid #250C80;
+    height: 80px;
+    width: 750px;
+}
+
+.possible-answer{
+    display: inline-block;
+    border-radius: 86px / 51px; 
+    border: 3px solid #250C80;
+    height: 30px;
+    width: 150px;
+}
