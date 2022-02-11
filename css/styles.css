@@ -11,8 +11,9 @@ body{
 .main-question-frame{
     display: block;
     width: 70%;
-    margin: auto;
-    position: relative;
+    position: absolute;
+    bottom: 2px;
+    left: 50vh;
 }
 
 .question-itself{
@@ -21,8 +22,10 @@ body{
     justify-content: center;
     margin: auto auto 6px;
     display: flex;
-    background-color: #11468F;
+    background-image: linear-gradient(3deg, #1546AC, #011961);
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     border-radius: 110px / 51px; 
     border: 3px solid #250C80;
     height: 80px;
@@ -37,10 +40,35 @@ body{
 
 .possible-answer{
     margin-bottom: 5px;
-    background-color: #11468F;
+    background-image: linear-gradient(3deg, #1546AC, #011961);
+    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     border-radius: 86px / 51px; 
     border: 3px solid #250C80;
     height: 30px;
     width: 350px;
+}
+
+.answer-stamp-formatting{
+left: 4%;
+position: relative;
+text-align: left;
+vertical-align: -moz-middle-with-baseline;
+color: #FD921E;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+.answer-formatting{
+color: #FAFFF9;
+position: relative;
+left: 4%;
+vertical-align: -moz-middle-with-baseline;
+}
+
+.diamond-shape{
+    color: #FAFFF9;
+    position: relative;
+    left: 3%;
+    vertical-align: -moz-middle-with-baseline; 
 }
