@@ -1,4 +1,5 @@
 body{
+    overflow: hidden;
    /* background-image:url("../images/background.gif") */
 }
 
@@ -10,12 +11,32 @@ body{
     background-size: 100% 100%;
 }
 
+.money-tree{
+    background-image: url("../images/moneytree.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    float: right;
+    position: absolute;
+    left: 99.6%;
+    margin-top: 2%;
+}
+
+/* .money-tree:hover{
+    left: 78%;
+} */
+
 .main-question-frame{
     display: block;
     position: absolute;
-    bottom: 7%;
+    bottom: 9%;
     width: 100vw;
 }
+
+/* .main-question-frame:hover {
+    transform: translateY(-130px);
+    transition: 1.0s;
+} */
 
 .question-itself{
     text-align: center;
