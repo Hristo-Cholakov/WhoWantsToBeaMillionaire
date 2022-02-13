@@ -6,7 +6,7 @@
 
 //     ])
 // }
-var treeDirection = 1;
+var treeDirection = "left";
 
 function moneyTreeChecker() {
     if (treeDirection == 1) {
@@ -16,36 +16,38 @@ function moneyTreeChecker() {
     }
 }
 
-function moneyTreeMoverLeft() {
-    treeDirection += 1;
-    let id = null;
-    const elem = document.querySelector(".money-tree");  
-    let pos = 99;
+function moneyTreeMover() {
+  let id = null;
+  const elem = document.querySelector(".money-tree");
+  let pos = 0;
+  if (treeDirection == "left") {
+    document.querySelector(".money-tree-arrow").innerHTML = "<i class='fa solid fa-angles-right'></i>";
+    treeDirection = "right";
+    pos = 100;
     clearInterval(id);
     id = setInterval(frame, 5);
     function frame() {
       if (pos == 78) {
         clearInterval(id);
       } else {
-        pos--; 
-        elem.style.left = pos + "%"; 
+        pos--;
+        elem.style.left = pos + "%";
       }
-    }
-};
-
-function moneyTreeMoverRight() {
-    treeDirection -= 1;
-    let id = null;
-    const elem = document.querySelector(".money-tree");  
-    let pos = 78;
+    };
+  } else {
+    pos = 78;
+    document.querySelector(".money-tree-arrow").innerHTML = "<i class='fa solid fa-angles-left'></i>";
+    treeDirection = "left";
     clearInterval(id);
     id = setInterval(frame, 5);
     function frame() {
-      if (pos == 97) {
+      if (pos == 100) {
         clearInterval(id);
       } else {
-        pos++; 
-        elem.style.left = pos + "%"; 
-      }
+        pos++;
+        elem.style.left = pos + "%";
+      };
+    
     }
+  }
 };

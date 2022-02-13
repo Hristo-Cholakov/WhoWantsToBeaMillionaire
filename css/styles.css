@@ -18,13 +18,23 @@ body{
     background-repeat: no-repeat;
     float: right;
     position: absolute;
-    left: 99.6%;
+    left: 100%;
     margin-top: 2%;
 }
 
-/* .money-tree:hover{
-    left: 78%;
-} */
+.money-tree-arrow{
+    top: 50%;
+    position: absolute;
+    right: 100%;
+    background-image: linear-gradient(3deg, #1546AC, #011961);
+    border-radius: 24%;
+    height: 7%;
+    width: 1%;
+}
+
+.money-tree-arrow:hover{
+    background-color: #FD921E;
+}
 
 .main-question-frame{
     display: block;
@@ -32,11 +42,6 @@ body{
     bottom: 9%;
     width: 100vw;
 }
-
-/* .main-question-frame:hover {
-    transform: translateY(-130px);
-    transition: 1.0s;
-} */
 
 .question-itself{
     text-align: center;
